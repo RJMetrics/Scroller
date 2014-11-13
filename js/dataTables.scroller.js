@@ -914,7 +914,8 @@ Scroller.prototype = /** @lends Scroller.prototype */{
 		}
 
 		container.appendTo( appendTo );
-		this.s.heights.row = $('tr', tbody).eq(1).outerHeight();
+		var trHeight = $('tr', tbody).eq(1).outerHeight();
+		this.s.heights.row =  trHeight == 0 ? 1 : trHeight; // RJM Added: make tr have a height of at least 1 so that we can properly test table rendering logic in angular
 		container.remove();
 	},
 
