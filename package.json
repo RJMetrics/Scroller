@@ -1,0 +1,9 @@
+{
+  "name": "datatables-scroller",
+  "version": "1.2.2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RJMetrics/Scroller.git"
+  },
+  "main": "js/dataTables.scroller.js"
+}
